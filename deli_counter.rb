@@ -13,6 +13,9 @@ def line(katz_deli)
   end
 end
 
+#katz_deli.each_with_index do |person, index|
+#  line_format.concat(" #{index+1}. #{person}"))
+
 
 def take_a_number(katz_deli, new_person)
   katz_deli.push(new_person)
@@ -24,10 +27,11 @@ def now_serving(katz_deli)
   if katz_deli == []
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{katz_deli[0]}."
-    katz_deli.shift()
+    puts "Currently serving #{katz_deli.shift()}."
   end
 end
+
+
 
 
 
